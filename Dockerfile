@@ -1,6 +1,7 @@
 FROM openjdk:8-jre-alpine
 
 ADD target/prometheus-jdbc-exporter-jar-with-dependencies.jar target/
+COPY lib/* target/
 
 EXPOSE 5555
 
